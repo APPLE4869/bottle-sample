@@ -1,4 +1,10 @@
 # coding: UTF-8
+'''
+開発環境への入り方
+$ python -m venv heroku_env
+$ source heroku_env/bin/activate
+'''
+
 import os
 from bottle import route, run, template
 from src import vorkers
