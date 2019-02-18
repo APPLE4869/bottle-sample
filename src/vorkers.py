@@ -47,7 +47,7 @@ class Vorkers:
 
     def __make_soup(self, url):
         # URLにアクセスする htmlが帰ってくる → <html><head><title>経済、株価、ビジネス、政治のニュース:日経電子版</title></head><body....
-        ua = 'Mozilla/5.0'
+        ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
         if 'USERAGENTIDENTIFIER_API_KEY' in os.environ:
             url += '&api_key=' + os.environ['USERAGENTIDENTIFIER_API_KEY'] + '&user_agent=' + ua
         print("--------------")
