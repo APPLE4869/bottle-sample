@@ -46,7 +46,8 @@ class Vorkers:
 
     def __make_soup(self, url):
         # URLにアクセスする htmlが帰ってくる → <html><head><title>経済、株価、ビジネス、政治のニュース:日経電子版</title></head><body....
-        req = urllib.request.Request(url , headers={'User-Agent': 'Mozilla/5.0'})
+        ua = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'
+        req = urllib.request.Request(url , headers={'User-Agent': ua})
         html = urllib.request.urlopen(req).read()
 
         # htmlをBeautifulSoupで扱う
