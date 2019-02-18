@@ -50,7 +50,7 @@ class Vorkers:
         ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
         if 'USERAGENTIDENTIFIER_API_KEY' in os.environ:
             ua = os.environ['USERAGENTIDENTIFIER_API_KEY']
-            url += os.environ['USERAGENTIDENTIFIER_API_KEY'] + '&user_agent=' + ua
+            url += '&api_key=' + os.environ['USERAGENTIDENTIFIER_API_KEY'] + '&user_agent=' + ua
         headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
             'user-agent': ua
